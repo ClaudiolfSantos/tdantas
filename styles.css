@@ -526,13 +526,56 @@ main {
 }
 
 .location-map {
+  position: relative;
+  display: block;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 240px;
-  background:
-    linear-gradient(135deg, rgba(224, 180, 77, 0.08), transparent 42%),
-    linear-gradient(180deg, rgba(18, 18, 18, 0.94), rgba(9, 9, 9, 0.98));
+  justify-content: flex-end;
+  min-height: 320px;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(18, 18, 18, 0.94), rgba(9, 9, 9, 0.98));
+  text-decoration: none;
+}
+
+.location-map iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: contrast(1.04) brightness(0.96);
+  transform: scale(1.02);
+}
+
+.location-map::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(5, 5, 5, 0.12), rgba(5, 5, 5, 0.72));
+  pointer-events: none;
+}
+
+.location-map span,
+.location-map strong,
+.location-map small {
+  position: relative;
+  z-index: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.location-map span {
+  padding-top: 20px;
+}
+
+.location-map strong {
+  margin-top: 6px;
+}
+
+.location-map small {
+  padding-bottom: 20px;
+  max-width: 24ch;
 }
 
 .location-map strong {
