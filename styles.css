@@ -218,6 +218,7 @@ main {
 .hero {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
+  align-items: start;
   gap: 26px;
   padding: 36px;
   overflow: hidden;
@@ -339,8 +340,8 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
-  align-items: stretch;
-  min-height: 100%;
+  align-items: start;
+  min-height: auto;
 }
 
 .visual-card {
