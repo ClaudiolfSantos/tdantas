@@ -508,18 +508,18 @@ main {
 }
 
 .portfolio-item {
-  min-height: 220px;
+  min-height: 190px;
   padding: 24px;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 10px;
 }
 
 .portfolio-large {
-  min-height: 280px;
+  min-height: 240px;
   background:
     linear-gradient(135deg, rgba(224, 180, 77, 0.08), rgba(255, 255, 255, 0.01)),
     linear-gradient(180deg, rgba(18, 18, 18, 0.95), rgba(8, 8, 8, 0.96));
