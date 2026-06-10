@@ -350,60 +350,6 @@ main {
   box-shadow: var(--shadow);
 }
 
-.visual-main {
-  min-height: 360px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-  position: relative;
-  overflow: hidden;
-}
-
-.visual-logo-card {
-  background:
-    radial-gradient(circle at top, rgba(224, 180, 77, 0.12), transparent 42%),
-    linear-gradient(180deg, rgba(18, 18, 18, 0.98), rgba(8, 8, 8, 0.98));
-}
-
-.hero-logo {
-  width: min(100%, 420px);
-  height: auto;
-  display: block;
-  filter: drop-shadow(0 22px 40px rgba(0, 0, 0, 0.52));
-}
-
-.visual-logo-card strong {
-  text-align: center;
-  max-width: 18ch;
-}
-
-.visual-main::before,
-.visual-main::after {
-  content: "";
-  position: absolute;
-  inset: auto;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(224, 180, 77, 0.18), transparent 68%);
-}
-
-.visual-main::before {
-  width: 240px;
-  height: 240px;
-  top: -60px;
-  right: -40px;
-}
-
-.visual-main::after {
-  width: 180px;
-  height: 180px;
-  left: -36px;
-  bottom: -46px;
-}
-
-.visual-main strong,
 .portfolio-item strong,
 .location-map strong {
   font-size: clamp(1.35rem, 2vw, 1.95rem);
@@ -738,9 +684,10 @@ main {
   }
 
   .site-header {
-    gap: 12px;
-    padding: 14px;
+    gap: 10px;
+    padding: 12px;
     position: static;
+    align-items: stretch;
   }
 
   .site-nav {
@@ -748,10 +695,13 @@ main {
     justify-content: space-between;
     overflow-x: auto;
     padding-bottom: 2px;
+    gap: 14px;
+    font-size: 0.92rem;
   }
 
   .header-whatsapp {
     width: 100%;
+    padding: 12px 16px;
   }
 
   .hero,
@@ -764,6 +714,28 @@ main {
     padding: 18px;
   }
 
+  .hero {
+    gap: 18px;
+  }
+
+  .hero-copy {
+    gap: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 11vw, 3.1rem);
+    line-height: 0.98;
+  }
+
+  .hero-text {
+    margin-top: 14px;
+    font-size: 0.98rem;
+  }
+
+  .hero-actions {
+    margin-top: 20px;
+  }
+
   .focus-banner {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -774,10 +746,6 @@ main {
     font-size: clamp(1.8rem, 10vw, 2.6rem);
   }
 
-  .hero h1 {
-    font-size: clamp(2.3rem, 14vw, 4rem);
-  }
-
   .hero-actions,
   .hero-points {
     grid-template-columns: 1fr;
@@ -785,6 +753,7 @@ main {
 
   .hero-points {
     gap: 10px;
+    margin-top: 20px;
   }
 
   .button {
@@ -792,12 +761,12 @@ main {
   }
 
   .visual-main {
-    min-height: 260px;
-    padding: 20px;
+    min-height: 220px;
+    padding: 16px;
   }
 
   .hero-logo {
-    width: min(100%, 280px);
+    width: min(100%, 220px);
   }
 
   .visual-side,
